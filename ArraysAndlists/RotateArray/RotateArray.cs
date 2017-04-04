@@ -8,7 +8,6 @@ public class RotateArray
     public static void Main()
     {
         // Reads ints from the Console and converts them to an array of ints
-
         Console.WriteLine("Please enter array of integers (integers separated by spaces)");
         var intArray = Console.ReadLine()
             .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).Select(int.Parse).ToArray();
@@ -18,14 +17,19 @@ public class RotateArray
         //    .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries), int.Parse);
 
         Console.WriteLine("Enter the number of positions to be shifted");
+        Console.WriteLine("Enter positive number for right shift, negative for left");
         int d = int.Parse(Console.ReadLine()) % intArray.Length;
+        if (d < 0)
+        {
+            d = (d + intArray.Length) % intArray.Length;
+        }
 
         if (d != 0)
+        {
             SubsetRotation(intArray, d);
+        }
 
         Console.WriteLine(string.Join(" ", intArray));
-
-
     }
 
     public static void SubsetRotation(int[] array, int d)
@@ -33,25 +37,20 @@ public class RotateArray
         int arraySubsetsNumber = EuclideanAlgorithm(array.Length, d);
         for (int i = 0; i < arraySubsetsNumber; i++)
         {
-            if (arraySubsetsNumber > 1)
+            for (int k = 0; k < array.Length / arraySubsetsNumber; k++)
             {
-                /////////////////////
-            }
-            else
-            {
-                d = Math.Abs(array.Length - d);
-                for (int k = 0; k < array.Length; k++)
+                int positionBase = (i);
+                int positionSwitch = ((i + k * d + d) % array.Length);
+                if (positionSwitch == positionBase)
                 {
-                    int position = (k * d + d) % array.Length;
-                    int temp = array[0];
-                    array[0] = array[position];
-                    array[position] = temp;
+                    break;
                 }
+                int temp = array[positionBase];
+                array[positionBase] = array[positionSwitch];
+                array[positionSwitch] = temp;
             }
         }
     }
-
-
     //Euclidian algorithm to determine the greatest common divisor
     public static int EuclideanAlgorithm(int m, int n)
     {
