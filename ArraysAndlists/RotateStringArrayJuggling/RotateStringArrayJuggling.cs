@@ -9,7 +9,7 @@ public class RotateStringArrayJuggling
     {
         // Reads strings from the Console and converts them to an array
         // Console.WriteLine("Please enter array of strings (integers separated by spaces)");
-        string[] intArray = Console.ReadLine()
+        string[] stringArray = Console.ReadLine()
             .Split(new char[] { ' ', ';' , '!', ',','?','.','/', '\\' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
 
         // Alternative syntaxis without Linq
@@ -18,18 +18,18 @@ public class RotateStringArrayJuggling
 
         //Console.WriteLine("Enter the number of positions to be shifted");
         //Console.WriteLine("Enter positive number for right shift, negative for left");
-        int d = int.Parse(Console.ReadLine()) % intArray.Length;
+        int d = int.Parse(Console.ReadLine()) % stringArray.Length;
         if (d < 0)
         {
-            d = (d + intArray.Length) % intArray.Length;
+            d = (d + stringArray.Length) % stringArray.Length;
         }
 
         if (d != 0)
         {
-            SubsetRotate(intArray, d);
+            SubsetRotate(stringArray, d);
         }
 
-        Console.WriteLine(string.Join(" ", intArray));
+        Console.WriteLine(string.Join(" ", stringArray));
     }
 
     public static void SubsetRotate(string[] array, int d)
