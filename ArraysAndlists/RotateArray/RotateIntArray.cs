@@ -3,7 +3,7 @@
 using System;
 using System.Linq;
 
-public class RotateArray
+public class RotateIntArray
 {
     public static void Main()
     {

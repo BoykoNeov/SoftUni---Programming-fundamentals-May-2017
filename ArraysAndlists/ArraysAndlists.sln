@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.10
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotateArray", "RotateArray\RotateArray.csproj", "{0CB2918F-DD08-4D19-A435-D816280D74EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotateStringArrayJuggling", "RotateStringArrayJuggling\RotateStringArrayJuggling.csproj", "{1DE56E10-336C-4442-98BA-E2CABA2BAB87}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0CB2918F-DD08-4D19-A435-D816280D74EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CB2918F-DD08-4D19-A435-D816280D74EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CB2918F-DD08-4D19-A435-D816280D74EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DE56E10-336C-4442-98BA-E2CABA2BAB87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE56E10-336C-4442-98BA-E2CABA2BAB87}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE56E10-336C-4442-98BA-E2CABA2BAB87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE56E10-336C-4442-98BA-E2CABA2BAB87}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
