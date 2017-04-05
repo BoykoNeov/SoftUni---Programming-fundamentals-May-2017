@@ -8,6 +8,7 @@ public class GreatestEnd
     {
         var firstString = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
         var secondString = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
+
         // the common elements can't be bigger than any of the arrays , so this array can be as big as any of the two arrays
         string[] beginningCommonEnd = new string[firstString.Length];
 
@@ -23,8 +24,10 @@ public class GreatestEnd
                 break;
             }
         }
+
         // since the string[] was defined as probably bigger than the answer will be, remove empty entries in order to properly determine its length
         beginningCommonEnd = beginningCommonEnd.Where(x => !string.IsNullOrEmpty(x)).ToArray();
+
         // define the back end and search the strings[] from end to beginning
         string[] endingCommonEnd = new string[firstString.Length];
         for (int j = 0; j < firstString.Length && j < secondString.Length; j++)
@@ -38,8 +41,10 @@ public class GreatestEnd
                 break;
             }
         }
+
         // as with the other end, remove the empty entries in order to properly determine the length
         endingCommonEnd = endingCommonEnd.Where(x => !string.IsNullOrEmpty(x)).ToArray();
+
         // compare the two and display the length of the bigger
         if (endingCommonEnd.Length > beginningCommonEnd.Length)
         {

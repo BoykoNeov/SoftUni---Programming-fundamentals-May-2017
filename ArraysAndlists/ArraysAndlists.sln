@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.10
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotateArray", "RotateArray\RotateArray.csproj", "{0CB2918F-DD08-4D19-A435-D816280D74EF}"
 EndProject
@@ -12,6 +12,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreatestCommonEnd", "GreatestCommonEnd\GreatestCommonEnd.csproj", "{3AD158DF-734B-4E2C-933E-3F63B3F13146}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotateAndSum", "RotateAndSum\RotateAndSum.csproj", "{973E30DC-6B3A-419D-8948-F693B126930F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoldAndSum", "FoldAndSum\FoldAndSum.csproj", "{235F43E2-CCD6-4745-BFFD-49CD370A0D8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SieveOfErathostenes", "SieveOfErathostenes\SieveOfErathostenes.csproj", "{3878DA41-05B1-491E-A9EF-DE5EBB01562F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{973E30DC-6B3A-419D-8948-F693B126930F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{973E30DC-6B3A-419D-8948-F693B126930F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{973E30DC-6B3A-419D-8948-F693B126930F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{235F43E2-CCD6-4745-BFFD-49CD370A0D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235F43E2-CCD6-4745-BFFD-49CD370A0D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235F43E2-CCD6-4745-BFFD-49CD370A0D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235F43E2-CCD6-4745-BFFD-49CD370A0D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3878DA41-05B1-491E-A9EF-DE5EBB01562F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3878DA41-05B1-491E-A9EF-DE5EBB01562F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3878DA41-05B1-491E-A9EF-DE5EBB01562F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3878DA41-05B1-491E-A9EF-DE5EBB01562F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

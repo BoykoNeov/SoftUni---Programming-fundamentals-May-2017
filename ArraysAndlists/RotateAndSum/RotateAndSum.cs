@@ -15,21 +15,22 @@ public class RotateAndSum
 
         for (int j = 0; j < rotationCount; j++)
         {
-
             for (int i = 0; i < array.Length; i++)
             {
                 rotatedArray[(i + 1) % array.Length] = array[i];
             }
+
             for (int i = 0; i < array.Length; i++)
             {
                 array[i] = rotatedArray[i];
             }
+
             for (int i = 0; i < array.Length; i++)
             {
                 sumArray[i] += rotatedArray[i];
             }
         }
 
-        Console.WriteLine(String.Join(" ", sumArray));
+        Console.WriteLine(string.Join(" ", sumArray));
     }
 }
