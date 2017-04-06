@@ -6,8 +6,14 @@ public class GreatestEnd
 {
     public static void Main()
     {
-        var firstString = Console.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
-        var secondString = Console.ReadLine().Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries).ToArray();
+        var firstString = Console.ReadLine()
+            .Split(new char[] { ' ' }, StringSplitOptions
+            .RemoveEmptyEntries)
+            .ToArray();
+        var secondString = Console.ReadLine()
+            .Split(new[] { ' ' }, StringSplitOptions
+            .RemoveEmptyEntries)
+            .ToArray();
 
         // the common elements can't be bigger than any of the arrays , so this array can be as big as any of the two arrays
         string[] beginningCommonEnd = new string[firstString.Length];
