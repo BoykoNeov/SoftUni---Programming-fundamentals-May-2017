@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareNumbers", "SquareNumb
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountNumbers", "CountNumbers\CountNumbers.csproj", "{61A8CCF2-BDC9-42FA-B0E4-156DA5C4B2ED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayManipulator", "ArrayManipulator\ArrayManipulator.csproj", "{FD5BF492-1726-4A84-9B7F-F8DD3EB5CA8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{61A8CCF2-BDC9-42FA-B0E4-156DA5C4B2ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61A8CCF2-BDC9-42FA-B0E4-156DA5C4B2ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61A8CCF2-BDC9-42FA-B0E4-156DA5C4B2ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD5BF492-1726-4A84-9B7F-F8DD3EB5CA8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5BF492-1726-4A84-9B7F-F8DD3EB5CA8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5BF492-1726-4A84-9B7F-F8DD3EB5CA8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5BF492-1726-4A84-9B7F-F8DD3EB5CA8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
