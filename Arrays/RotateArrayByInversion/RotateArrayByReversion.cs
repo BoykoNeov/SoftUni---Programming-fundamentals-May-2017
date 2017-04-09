@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Rotate an array by reversion
+// Algorithm - 1.Reverse the entire array 2.Reverse the first d-elements 3.Reverse the other half
+
+using System;
 using System.Linq;
 
 public class RotateArrayByReversion
@@ -12,11 +15,9 @@ public class RotateArrayByReversion
 
         int d = int.Parse(Console.ReadLine()) % ReversionArray.Length;
 
-        Array.Reverse(ReversionArray, 0, d);
-        Array.Reverse(ReversionArray, d+1, ReversionArray.Length - d - 1);
         Array.Reverse(ReversionArray);
-
-
+        Array.Reverse(ReversionArray, 0, d);
+        Array.Reverse(ReversionArray, d, ReversionArray.Length -d);
         Console.WriteLine(string.Join(" ", ReversionArray));
     }
 }
