@@ -1,6 +1,6 @@
 ﻿// Write a program that reads an array of integers from the console and set of commands and executes them over
 // the array. The commands are as follows:
-// add &lt;index&gt; &lt;element&gt; – adds element at the specified index (elements right from this position inclusively
+// add index element – adds element at the specified index (elements right from this position inclusively
 // are shifted to the right).
 // addMany index element1 element2 elementN – adds a set of elements at the specified index.
 // contains element – prints the index of the first occurrence of the specified element (if exists) in the array
