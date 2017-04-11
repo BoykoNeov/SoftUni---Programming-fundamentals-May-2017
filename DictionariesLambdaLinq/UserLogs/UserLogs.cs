@@ -1,4 +1,7 @@
-﻿using System;
+﻿// Task "User Logs"
+// Check the file ../06. Programming-Fundamentals-Dictionaries-Lambda-LINQ-Exercises for task description
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -17,11 +20,6 @@ public class UserLogs
                 break;
             }
 
-            //if (!input.Contains("user"))
-            //{
-            //    input.AddRange(Console.ReadLine().Split(new char[] { '=', ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList());
-            //}
-
             string username = string.Empty;
             string ip = string.Empty;
 
@@ -29,15 +27,18 @@ public class UserLogs
             {
                 if (input[i] == "IP")
                 {
+                    // Since the input string are separated for '=' also, the IP addres is the next list entry after "IP"
                     ip = input[i + 1];
                 }
 
                 if (input[i] == "user")
                 {
+                    // Since the input string are separated for '=' also, the username addres is the next list entry after "user"
                     username = input[i + 1];
                 }
             }
 
+            // add all IPs to the dictionary of lists with the username as key
             if (UserLogs.ContainsKey(username))
             {
                 UserLogs[username].Add(ip);
@@ -49,26 +50,34 @@ public class UserLogs
             }
         }
 
+        // run through the dictionary of lists and count the occurencies of each unique string (ip) and 
+        // add them to a new dictionary <string,int> for the final output (unique IPs as keys in the final dict)
         foreach (KeyValuePair<string, List<string>> kvp in UserLogs)
         {
             Console.WriteLine($"{kvp.Key}:");
-            int ipCount = 0;
+
+            // list for constructing the Console output for each unique IP
             List<string> consoleIpOutput = new List<string>();
 
-            for (int j = 0; j < kvp.Value.Count; j++)
+            Dictionary<string, int> ipCount = new Dictionary<string, int>();
+
+            for (int i = 0; i < kvp.Value.Count; i++)
             {
-                for (int i = 0; i < kvp.Value.Count; i++)
+                if (ipCount.ContainsKey(kvp.Value[i]))
                 {
-                    if (kvp.Value[0] == kvp.Value[i])
-                    {
-                        ipCount++;
-                    }
+                    ipCount[kvp.Value[i]] = ipCount[kvp.Value[i]] + 1;
                 }
-                consoleIpOutput.Add(string.Format($"{kvp.Value[0]} => {ipCount}"));
-                kvp.Value.RemoveAll(item => item == kvp.Value[0]);
-                j = -1;
-                ipCount = 0;
+                else
+                {
+                    ipCount.Add(kvp.Value[i], 1);
+                }
             }
+
+            foreach (var internalKvp in ipCount)
+            {
+                consoleIpOutput.Add(string.Format($"{internalKvp.Key} => {internalKvp.Value}"));
+            }
+
             Console.WriteLine(string.Join(", ", consoleIpOutput) + ".");
         }
     }
