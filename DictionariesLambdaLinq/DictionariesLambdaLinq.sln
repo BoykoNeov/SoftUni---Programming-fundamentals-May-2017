@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HandsOfCards", "HandsOfCard
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserLogs", "UserLogs\UserLogs.csproj", "{26985C24-A113-4E8D-86CA-31EA60897DA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopulationCounter", "PopulationCounter\PopulationCounter.csproj", "{978E7628-EA54-4232-911E-A7B59DBC3E44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{26985C24-A113-4E8D-86CA-31EA60897DA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26985C24-A113-4E8D-86CA-31EA60897DA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26985C24-A113-4E8D-86CA-31EA60897DA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{978E7628-EA54-4232-911E-A7B59DBC3E44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978E7628-EA54-4232-911E-A7B59DBC3E44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978E7628-EA54-4232-911E-A7B59DBC3E44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978E7628-EA54-4232-911E-A7B59DBC3E44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
