@@ -11,7 +11,7 @@ public class LogsAggregator
     {
         int n = int.Parse(Console.ReadLine());
         var usersMinutes = new Dictionary<string, int>();
-        var usersIPs = new Dictionary<string, SortedSet<string>>();
+        var usersIPs = new Dictionary<string, HashSet<string>>();
 
         for (int i = 0; i < n; i++)
         {
@@ -20,7 +20,7 @@ public class LogsAggregator
             if (!usersMinutes.ContainsKey(input[1]))
             {
                 usersMinutes.Add(input[1], int.Parse(input[2]));
-                usersIPs.Add(input[1], new SortedSet<string>());
+                usersIPs.Add(input[1], new HashSet<string>());
                 usersIPs[input[1]].Add(input[0]);
             }
             else
@@ -33,7 +33,7 @@ public class LogsAggregator
         foreach (var kvpUsersMinutes in usersMinutes.OrderBy(x => x.Key))
         {
             string output = string.Format($"{kvpUsersMinutes.Key}: {kvpUsersMinutes.Value} ");
-            output += string.Format($"[{string.Join(", ", usersIPs[kvpUsersMinutes.Key].ToList())}]");
+            output += string.Format($"[{string.Join(", ", usersIPs[kvpUsersMinutes.Key].OrderBy(x => x))}]");
             Console.WriteLine(output);
         }
     }
