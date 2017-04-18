@@ -1,4 +1,6 @@
-﻿using System;
+﻿// A class "Sale" holding the following data: town, product, price, quantity.
+
+using System;
 using System.Linq;
 
 namespace SalesReport
