@@ -1,4 +1,6 @@
-﻿using System;
+﻿// Task "Book library", for details check ../07. Programming-Fundamentals-Objects-and-Classes-Exercises.docx
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Globalization;
@@ -9,16 +11,20 @@ namespace BookLibrary
     {
         public static void Main()
         {
+            // Read the number of book inputs from the console & initialize a new "library" with a Book list in it
             int n = int.Parse(Console.ReadLine());
             Library library = new Library()
             {
                 Books = new List<Book>()
             };
+
+            // Read individual book information , and also fill newly initialized dictionary with total prices by authors
+            var authorPrice = new Dictionary<string, decimal>();
             for (int i = 0; i < n; i++)
             {
                 string[] input = Console.ReadLine().Split(' ').ToArray();
                 string dateSeparator = "d.M.yyyy";
-                library.Books.Add(new Book()
+                Book currentBook = new Book()
                 {
                     Title = input[0],
                     Author = input[1],
@@ -26,12 +32,9 @@ namespace BookLibrary
                     ReleaseDate = DateTime.ParseExact(input[3], dateSeparator, CultureInfo.InvariantCulture),
                     ISBNnumber = input[4],
                     Price = decimal.Parse(input[5])
-                });
-            }
+                };
 
-            var authorPrice = new Dictionary<string, decimal>();
-            foreach (Book currentBook in library.Books)
-            {
+                library.Books.Add(currentBook);
                 if (!authorPrice.ContainsKey(currentBook.Author))
                 {
                     authorPrice.Add(currentBook.Author, currentBook.Price);
@@ -42,6 +45,7 @@ namespace BookLibrary
                 }
             }
 
+            // Print output as per task definition
             foreach (KeyValuePair<string, decimal> kvp in authorPrice.OrderByDescending(x => x.Value).ThenBy(x => x.Key))
             {
                 Console.WriteLine($"{kvp.Key} -> {kvp.Value:f2}");
