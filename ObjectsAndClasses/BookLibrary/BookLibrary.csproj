@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{08373762-A82D-4945-A86D-E69AAFF5C948}</ProjectGuid>
+    <ProjectGuid>{0831FF40-D1D7-47BA-A6E8-5816F164CBAC}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DayOfWeek</RootNamespace>
-    <AssemblyName>DayOfWeek</AssemblyName>
+    <RootNamespace>BookLibrary</RootNamespace>
+    <AssemblyName>BookLibrary</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DayOfWeek.cs" />
+    <Compile Include="Book.cs" />
+    <Compile Include="BookLibrary.cs" />
+    <Compile Include="Library.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
