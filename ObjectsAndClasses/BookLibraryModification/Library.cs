@@ -1,6 +1,6 @@
 ﻿// Class containing library properties and information
 
-namespace BookLibrary
+namespace BookLibraryModification
 {
     using System.Collections.Generic;
 

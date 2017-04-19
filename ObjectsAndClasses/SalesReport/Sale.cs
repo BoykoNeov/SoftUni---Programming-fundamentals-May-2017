@@ -1,15 +1,18 @@
 ﻿// A class "Sale" holding the following data: town, product, price, quantity.
 
-using System;
-using System.Linq;
-
 namespace SalesReport
 {
+    using System;
+    using System.Linq;
+
     public class Sale
     {
         public string Town { get; set; }
+
         public string Product { get; set; }
+
         public double Quantity { get; set; }
+
         public double Price { get; set; }
 
         public static Sale ReadSale(string input)

@@ -1,12 +1,12 @@
 ﻿// Read a list of sales and calculate and print the total sales by town as shown in the output.
 // Order alphabetically the towns in the output.
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
 namespace SalesReport
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     public class SalesReport
     {
         public static void Main()

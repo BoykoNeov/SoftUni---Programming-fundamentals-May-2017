@@ -1,12 +1,12 @@
 ﻿// Task "Book library", for details check ../07. Programming-Fundamentals-Objects-and-Classes-Exercises.docx
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Globalization;
-
 namespace BookLibrary
 {
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+
     public class BookLibrary
     {
         public static void Main()

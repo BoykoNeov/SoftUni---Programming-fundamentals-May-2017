@@ -1,10 +1,10 @@
 ﻿// Task "Average Grades", for details check ../07. Programming-Fundamentals-Objects-and-Classes-Exercises.docx
 
-using System;
-using System.Linq;
-
 namespace AverageGrades
 {
+    using System;
+    using System.Linq;
+
     public class AverageGrades
     {
         public static void Main()

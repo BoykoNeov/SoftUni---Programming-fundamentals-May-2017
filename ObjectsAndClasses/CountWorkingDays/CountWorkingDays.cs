@@ -1,28 +1,28 @@
 ﻿// Write a program that reads two dates in format dd-MM-yyyy and 
 // prints the number of working days between these two dates inclusive. 
 
-using System;
-using System.Globalization;
-
 namespace CountWorkingDays
 {
+    using System;
+    using System.Globalization;
+
     public class CountWorkingDays
     {
         public static void Main()
         {
-            DateTime[] Holidays = new DateTime[11];
+            DateTime[] holidays = new DateTime[11];
             string dateTimeFormat = "d-M-yyyy";
-            Holidays[0] = DateTime.ParseExact("1-1-2017", dateTimeFormat, CultureInfo.InvariantCulture);
-            Holidays[1] = DateTime.ParseExact("1-5-2017", dateTimeFormat, CultureInfo.InvariantCulture);
-            Holidays[2] = DateTime.ParseExact("6-5-2017", dateTimeFormat, CultureInfo.InvariantCulture);
-            Holidays[3] = DateTime.ParseExact("24-5-2017", dateTimeFormat, CultureInfo.InvariantCulture);
-            Holidays[4] = DateTime.ParseExact("6-9-2017", dateTimeFormat, CultureInfo.InvariantCulture);
-            Holidays[5] = DateTime.ParseExact("22-9-2017", dateTimeFormat, CultureInfo.InvariantCulture);
-            Holidays[6] = DateTime.ParseExact("01-11-2017", dateTimeFormat, CultureInfo.InvariantCulture);
-            Holidays[7] = DateTime.ParseExact("3-3-2017", dateTimeFormat, CultureInfo.InvariantCulture);
-            Holidays[8] = DateTime.ParseExact("24-12-2017", dateTimeFormat, CultureInfo.InvariantCulture);
-            Holidays[9] = DateTime.ParseExact("25-12-2017", dateTimeFormat, CultureInfo.InvariantCulture);
-            Holidays[10] = DateTime.ParseExact("26-12-2017", dateTimeFormat, CultureInfo.InvariantCulture);
+            holidays[0] = DateTime.ParseExact("1-1-2017", dateTimeFormat, CultureInfo.InvariantCulture);
+            holidays[1] = DateTime.ParseExact("1-5-2017", dateTimeFormat, CultureInfo.InvariantCulture);
+            holidays[2] = DateTime.ParseExact("6-5-2017", dateTimeFormat, CultureInfo.InvariantCulture);
+            holidays[3] = DateTime.ParseExact("24-5-2017", dateTimeFormat, CultureInfo.InvariantCulture);
+            holidays[4] = DateTime.ParseExact("6-9-2017", dateTimeFormat, CultureInfo.InvariantCulture);
+            holidays[5] = DateTime.ParseExact("22-9-2017", dateTimeFormat, CultureInfo.InvariantCulture);
+            holidays[6] = DateTime.ParseExact("01-11-2017", dateTimeFormat, CultureInfo.InvariantCulture);
+            holidays[7] = DateTime.ParseExact("3-3-2017", dateTimeFormat, CultureInfo.InvariantCulture);
+            holidays[8] = DateTime.ParseExact("24-12-2017", dateTimeFormat, CultureInfo.InvariantCulture);
+            holidays[9] = DateTime.ParseExact("25-12-2017", dateTimeFormat, CultureInfo.InvariantCulture);
+            holidays[10] = DateTime.ParseExact("26-12-2017", dateTimeFormat, CultureInfo.InvariantCulture);
 
             DateTime firstDate = DateTime.ParseExact(Console.ReadLine(), dateTimeFormat, CultureInfo.InvariantCulture);
             DateTime secondDate = DateTime.ParseExact(Console.ReadLine(), dateTimeFormat, CultureInfo.InvariantCulture);
@@ -38,10 +38,9 @@ namespace CountWorkingDays
                 }
 
                 // Compare the current date to holiday list
-                for (int i = 0; i < Holidays.Length; i++)
+                for (int i = 0; i < holidays.Length; i++)
                 {
-
-                    if (firstDate.Day == Holidays[i].Day && firstDate.Month == Holidays[i].Month)
+                    if (firstDate.Day == holidays[i].Day && firstDate.Month == holidays[i].Month)
                     {
                         isWorkingDay = false;
                         break;

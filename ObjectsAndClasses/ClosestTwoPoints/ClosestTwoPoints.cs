@@ -1,10 +1,10 @@
 ﻿// Write a program to read n points and find the closest two of them.
 
-using System;
-using System.Linq;
-
 namespace ClosestTwoPoints
 {
+    using System;
+    using System.Linq;
+
     public class ClosestTwoPoints
     {
         public static void Main()

@@ -1,9 +1,9 @@
 ﻿// Write a program to read two rectangles {left, top, width, height} and print whether the first is inside the second.
 
-using System;
-
 namespace RectanglePosition
 {
+    using System;
+
     public class RectanglePosition
     {
         public static void Main()

@@ -1,11 +1,11 @@
 ﻿// Write a method to calculate the distance between two points p1 {x1, y1} and p2 {x2, y2}. 
 // Write a program to read two points (given as two integers) and print the Euclidean distance between them.
 
-using System;
-using System.Linq;
-
 namespace DistanceBetweenPoints
 {
+    using System;
+    using System.Linq;
+
     public class DistanceBetweenPoints
     {
         public static void Main()
