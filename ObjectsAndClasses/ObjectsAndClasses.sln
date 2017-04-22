@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AndreyAndBilliard", "Andrey
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MentorGroup", "MentorGroup\MentorGroup.csproj", "{D14B5E60-936B-4CE5-B382-D8B75482593D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentGroups", "StudentGroups\StudentGroups.csproj", "{8A539668-0BC8-4D22-A3A1-39361F81B6AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{D14B5E60-936B-4CE5-B382-D8B75482593D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D14B5E60-936B-4CE5-B382-D8B75482593D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D14B5E60-936B-4CE5-B382-D8B75482593D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A539668-0BC8-4D22-A3A1-39361F81B6AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A539668-0BC8-4D22-A3A1-39361F81B6AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A539668-0BC8-4D22-A3A1-39361F81B6AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A539668-0BC8-4D22-A3A1-39361F81B6AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
