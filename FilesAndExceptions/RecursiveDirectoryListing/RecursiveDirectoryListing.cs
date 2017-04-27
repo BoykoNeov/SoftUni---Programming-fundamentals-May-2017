@@ -10,7 +10,6 @@ namespace RecursiveDirectoryListing
 
     public class RecursiveDirectoryListing
     {
-
         public static void Main(string[] args)
         {
             DirectoryInfo currentDirectory = new DirectoryInfo(Directory.GetCurrentDirectory());
@@ -28,6 +27,12 @@ namespace RecursiveDirectoryListing
             Console.WriteLine(string.Join(Environment.NewLine, list2.FilesAndDirectoriesList));
         }
 
+        /// <summary>
+        /// The method that performs recursive listing of subfolders and files
+        /// </summary>
+        /// <param name="inputDir"></param> directory to start the recurse listing
+        /// <param name="prefix"></param> prefix for displaying results
+        /// <returns></returns>
         public static FilesAndDirectories RecurseList(string inputDir, string prefix)
         {
             FilesAndDirectories currentObject = new FilesAndDirectories()
