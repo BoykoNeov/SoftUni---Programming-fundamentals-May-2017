@@ -1,4 +1,4 @@
-﻿// Write a program that takes a base-10 number (0 to 1050) and converts it to a base-N number, where 2 <= N <= 10.
+﻿// Write a program that takes a base-10 number (0 to 10^50) and converts it to a base-N number, where 2 <= N <= 10.
 // The input consists of 1 line containing two numbers separated by a single space.
 // The first number is the base N to which you have to convert.The second one is the base 10 number to be converted.
 
