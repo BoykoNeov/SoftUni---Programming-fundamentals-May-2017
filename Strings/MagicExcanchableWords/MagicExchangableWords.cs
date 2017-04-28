@@ -9,8 +9,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 public class MagicExchangableWords
 {
@@ -21,7 +19,7 @@ public class MagicExchangableWords
         .ToArray();
 
         bool stringsAreEqualLength = false;
-        bool stringsAreExchangable = false;
+        bool stringsAreExchangable = true;
 
         string firstString = inputs[0];
         string secondString = inputs[1];
@@ -29,16 +27,16 @@ public class MagicExchangableWords
         if (firstString.Length == secondString.Length)
         {
             stringsAreEqualLength = true;
-            string tempString = string.Empty;
 
             for (int i = 0; i < firstString.Length; i++)
             {
-                tempString = firstString.Replace(firstString[i], secondString[i]);
-            }
-
-            if (tempString == secondString)
-            {
-                stringsAreExchangable = true;
+                List<int> charPositionsFirstString = StringCharacterIndexes(firstString[i], firstString);
+                List<int> charPoistionsSecondString = StringCharacterIndexes(secondString[i], secondString);
+                if (!charPositionsFirstString.SequenceEqual(charPoistionsSecondString))
+                {
+                    stringsAreExchangable = false;
+                    break;
+                }
             }
         }
 
@@ -46,10 +44,30 @@ public class MagicExchangableWords
         {
             var firstStringCharactersCount = firstString.ToCharArray().Distinct().Count();
             var secondStringCharactersCount = secondString.ToCharArray().Distinct().Count();
-
-            stringsAreExchangable = (firstStringCharactersCount == secondStringCharactersCount);
+            stringsAreExchangable = firstStringCharactersCount == secondStringCharactersCount;
         }
 
-        Console.WriteLine(stringsAreExchangable);
+        Console.WriteLine(stringsAreExchangable.ToString().ToLower());
+    }
+
+    public static List<int> StringCharacterIndexes(char inputChar, string inputString)
+    {
+        List<int> outputList = new List<int>();
+        int index = 0;
+
+        while (true)
+        {
+            index = inputString.IndexOf(inputChar, index);
+            outputList.Add(index);
+
+            if (index == -1 || index + 1 == inputString.Length)
+            {
+                break;
+            }
+
+            index++;
+        }
+
+        return outputList;
     }
 }
