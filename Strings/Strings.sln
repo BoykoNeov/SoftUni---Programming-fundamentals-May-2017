@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseString", "ReverseString\ReverseString.csproj", "{1EB9F892-7BA7-45A8-B2C4-E9E464F579B4}"
 EndProject
@@ -20,6 +20,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterMultiplier", "CharacterMultiplier\CharacterMultiplier.csproj", "{8CAA569D-D2C0-42F2-ACF5-408498CB38B1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicExcanchableWords", "MagicExcanchableWords\MagicExcanchableWords.csproj", "{A232C9D2-6072-46FF-84D7-FF9A03009C3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicExchangableWords_Alternative", "MagicExchangableWords-Alternative\MagicExchangableWords_Alternative.csproj", "{11C9499D-5BC5-4366-B311-C124A3652786}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{A232C9D2-6072-46FF-84D7-FF9A03009C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A232C9D2-6072-46FF-84D7-FF9A03009C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A232C9D2-6072-46FF-84D7-FF9A03009C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11C9499D-5BC5-4366-B311-C124A3652786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11C9499D-5BC5-4366-B311-C124A3652786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11C9499D-5BC5-4366-B311-C124A3652786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11C9499D-5BC5-4366-B311-C124A3652786}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
