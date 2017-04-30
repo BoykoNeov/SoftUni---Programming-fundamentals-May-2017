@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiplyBigNumber", "Multip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SumBigNumbers", "SumBigNumbers\SumBigNumbers.csproj", "{0C98534C-150C-4F9E-A22C-4FC76269FDD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LettersChangeNumbers", "LettersChangeNumbers\LettersChangeNumbers.csproj", "{73F3C424-E371-4221-B077-415F85116D2F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{0C98534C-150C-4F9E-A22C-4FC76269FDD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C98534C-150C-4F9E-A22C-4FC76269FDD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C98534C-150C-4F9E-A22C-4FC76269FDD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F3C424-E371-4221-B077-415F85116D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F3C424-E371-4221-B077-415F85116D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F3C424-E371-4221-B077-415F85116D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F3C424-E371-4221-B077-415F85116D2F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
