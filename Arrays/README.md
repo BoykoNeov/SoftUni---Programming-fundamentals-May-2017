@@ -41,6 +41,7 @@ Write a program to read an array of **n integers** (space separated on a single 
 A program that rotates an array by creating a new array and assigning values to their new position in the new array
 
 
+
 ## Rotate Array By Inverstion
 
 A program that rotates an array by several inversions
@@ -258,7 +259,7 @@ Rounding in “away from zero” style means:
 - To round to the nearest integer, e.g. 2.9  3; -1.75  -2
 - In case the number is exactly in the middle of two integers (midpoint value), round it to the next integer which is away from the 0:
 
-![Not fount](/Programmin%20Fundamentals/Homeworks%20and%20Labs/images/away_from_zero.png)
+
 #### Example
 
 |  Input | Output  |
