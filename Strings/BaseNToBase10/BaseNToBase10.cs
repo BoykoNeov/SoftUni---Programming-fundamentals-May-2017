@@ -1,7 +1,8 @@
-﻿// Write a program that takes a base-N number and converts it to a base-10 number (0 to 1050), where 2 <= N <= 10.
-// The input consists of 1 line containing two numbers separated by a single space.
-// The first number is the base N to which you have to convert.The second one is the base N number to be converted.
-
+﻿/// <summary>
+/// Write a program that takes a base-N number and converts it to a base-10 number (0 to 10^50), where 2 &lt= N &lt= 10.
+/// The input consists of 1 line containing two numbers separated by a single space.
+/// The first number is the base N to which you have to convert.The second one is the base N number to be converted.
+/// </summary>
 namespace BaseNToBase10
 {
     using System;

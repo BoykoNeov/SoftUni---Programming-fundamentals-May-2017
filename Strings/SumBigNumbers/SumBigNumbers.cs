@@ -1,11 +1,11 @@
-﻿namespace SumBigNumbers
+﻿/// <summary>
+/// You are given two lines - each can be a really big number (0 to 1050). You must display the sum of these numbers.
+///Note: do not use the BigInteger or BigDecimal classes for solving this problem.
+/// </summary>
+namespace SumBigNumbers
 {
     using System;
 
-    /// <summary>
-    /// You are given two lines - each can be a really big number (0 to 1050). You must display the sum of these numbers.
-    ///Note: do not use the BigInteger or BigDecimal classes for solving this problem.
-    /// </summary>
     public class SumBigNumbers
     {
         public static void Main()

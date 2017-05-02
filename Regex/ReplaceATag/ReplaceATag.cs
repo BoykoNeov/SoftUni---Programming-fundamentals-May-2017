@@ -1,6 +1,7 @@
 ﻿/// <summary>
-/// Write a program that replaces in a HTML document given as string all the tags <a href=…>…</a> 
-/// with corresponding tags [URL href=…>…[/URL]. Read an input, until you receive “end” command. Print the result on the console. 
+/// Write a program that replaces in a HTML document given as string all the tags &lt;a href=…>…</a> 
+/// with corresponding tags [URL href=…>…[/URL]. Read an input, until you receive “end” command.
+/// Print the result on the console. 
 /// </summary>
 namespace ReplaceATag
 {

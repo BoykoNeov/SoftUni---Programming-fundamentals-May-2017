@@ -1,16 +1,17 @@
-﻿// ** A more effective version, using a dictionary
-// Task MagicExchangableWords. Write a method that takes as input two strings, and returns Boolean if 
-// they are exchangeable or not. Exchangeable are words where the characters in the first string can be replaced 
-// to get the second string. Example: "egg" and "add" are exchangeable, but "aabbccbb" and "nnooppzz" are not. 
-// (First 'b' corresponds to 'o', but then it also corresponds to 'z'). The two words may not have the same length, 
-// if such is the case they are exchangeable only if the longer one doesn't have more types of characters then the 
-// shorter one ("Clint" and "Eastwaat" are exchangeable because 'a' and 't' are already mapped as 'l' and 'n', but
-// "Clint" and "Eastwood" aren't exchangeable because 'o' and 'd' are not contained in "Clint").
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
+/// <summary>
+/// ** A more effective version, using a dictionary
+/// Task MagicExchangableWords. Write a method that takes as input two strings, and returns Boolean if 
+/// they are exchangeable or not. Exchangeable are words where the characters in the first string can be replaced 
+/// to get the second string. Example: "egg" and "add" are exchangeable, but "aabbccbb" and "nnooppzz" are not. 
+/// (First 'b' corresponds to 'o', but then it also corresponds to 'z'). The two words may not have the same length, 
+/// if such is the case they are exchangeable only if the longer one doesn't have more types of characters then the 
+/// shorter one ("Clint" and "Eastwaat" are exchangeable because 'a' and 't' are already mapped as 'l' and 'n', but
+/// "Clint" and "Eastwood" aren't exchangeable because 'o' and 'd' are not contained in "Clint").
+/// </summary>
 public class MagicExchangableWords_Alternative
 {
     public static void Main()

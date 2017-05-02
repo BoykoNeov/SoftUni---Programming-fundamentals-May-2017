@@ -1,12 +1,12 @@
-﻿namespace MultiplyBigNumber
+﻿/// <summary>
+///  You are given two lines - the first one can be a really big number (0 to 10^50). 
+/// The second one will be a single digit number (0 to 9). You must display the product of these numbers.
+/// Note: do not use the BigInteger or BigDecimal classes for solving this problem.
+/// </summary>
+namespace MultiplyBigNumber
 {
     using System;
 
-    /// <summary>
-    ///  You are given two lines - the first one can be a really big number (0 to 10^50). 
-    /// The second one will be a single digit number (0 to 9). You must display the product of these numbers.
-    /// Note: do not use the BigInteger or BigDecimal classes for solving this problem.
-    /// </summary>
     public class MultiplyBigNumber
     {
         public static void Main()
