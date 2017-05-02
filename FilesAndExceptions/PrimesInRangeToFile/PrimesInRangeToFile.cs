@@ -1,9 +1,10 @@
-﻿// Write all primes in a range to file
-
-using System;
+﻿using System;
 using System.Text;
 using System.IO;
 
+/// <summary>
+///  Write all primes in a range to file
+/// </summary>
 public class PrimesInRangeToFile
 {
     public static void Main()

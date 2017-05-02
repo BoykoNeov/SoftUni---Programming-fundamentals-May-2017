@@ -1,6 +1,9 @@
-﻿// Task "Book library Modification", for details
-// check ../07. Programming-Fundamentals-Objects-and-Classes-Exercises.docx
-
+﻿/// <summary>
+/// Task "Book library Modification"
+/// Use the classes from the previous problem and make a program that **read a list of books**
+/// and **print all titles released after given date** ordered **by date** and then **by title
+/// lexicographically**. The date is given if format **“day-month-year”** at the last line in the input.
+/// </summary>
 namespace BookLibraryModification
 {
     using System;

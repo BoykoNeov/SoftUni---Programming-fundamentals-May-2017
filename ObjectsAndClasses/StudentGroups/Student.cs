@@ -2,6 +2,9 @@
 {
     using System;
 
+    /// <summary>
+    /// Class holding student information
+    /// </summary>
    public class Student
     {
         public string StudentName { get; set; }

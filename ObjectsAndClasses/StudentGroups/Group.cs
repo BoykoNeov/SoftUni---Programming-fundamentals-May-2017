@@ -3,6 +3,9 @@
     using System.Collections.Generic;
     using System.Linq;
 
+    /// <summary>
+    /// Class holding each group information
+    /// </summary>
     public class Group
     {
         public Town GroupTown { get; set; }

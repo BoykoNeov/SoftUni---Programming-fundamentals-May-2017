@@ -1,10 +1,11 @@
-﻿// Class for holding information about teams
-
-namespace TeamworkProjects
+﻿namespace TeamworkProjects
 {
     using System.Collections.Generic;
 
-   public class Team
+    /// <summary>
+    /// Class for holding information about teams
+    /// </summary>
+    public class Team
     {
        public string Creator { get; set; }
 

@@ -1,5 +1,14 @@
-﻿// Task "Average Grades", for details check ../07. Programming-Fundamentals-Objects-and-Classes-Exercises.docx
-
+﻿/// <summary>
+/// Task "Average Grades"
+/// Define a class Student, which holds the following information about students:
+/// name, list of grades 
+/// and average grade (calculated property, read-only). A single grade will be 
+/// in range [2…6], e.g. 3.25 or 5.50.
+/// Read a  list of students and print the students that have 
+/// average grade ≥ 5.00 ordered  by
+/// name (ascending), then by  average grade (descending).
+/// Print the student name and the calculated average grade.
+/// </summary>
 namespace AverageGrades
 {
     using System;

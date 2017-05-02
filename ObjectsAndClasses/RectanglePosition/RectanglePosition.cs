@@ -1,5 +1,6 @@
-﻿// Write a program to read two rectangles {left, top, width, height} and print whether the first is inside the second.
-
+﻿/// <summary>
+/// Write a program to read two rectangles {left, top, width, height} and print whether the first is inside the second.
+/// </summary>
 namespace RectanglePosition
 {
     using System;

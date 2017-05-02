@@ -1,19 +1,20 @@
-﻿// Write a program that reads an array of integers from the console and set of commands and executes them over
-// the array. The commands are as follows:
-// add index element – adds element at the specified index (elements right from this position inclusively
-// are shifted to the right).
-// addMany index element1 element2 elementN – adds a set of elements at the specified index.
-// contains element – prints the index of the first occurrence of the specified element (if exists) in the array
-// or -1 if the element is not found.
-// remove index – removes the element at the specified index.
-// shift positions – shifts every element of the array the number of positions to the left (with rotation).
-// sumPairs – sums the elements in the array by pairs (first + second, third + fourth, …).
-// print – stop receiving more commands and print the last state of the array.
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
+/// <summary>
+/// Write a program that reads an array of integers from the console and set of commands and executes them over
+/// the array. The commands are as follows:
+/// add index element – adds element at the specified index (elements right from this position inclusively
+/// are shifted to the right).
+/// addMany index element1 element2 elementN – adds a set of elements at the specified index.
+/// contains element – prints the index of the first occurrence of the specified element (if exists) in the array
+/// or -1 if the element is not found.
+/// remove index – removes the element at the specified index.
+/// shift positions – shifts every element of the array the number of positions to the left (with rotation).
+/// sumPairs – sums the elements in the array by pairs (first + second, third + fourth, …).
+/// print – stop receiving more commands and print the last state of the array.
+/// </summary>
 public class ArrayManipulator
 {
     public static void Main()

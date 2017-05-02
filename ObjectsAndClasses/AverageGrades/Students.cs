@@ -1,9 +1,10 @@
-﻿// Class for holding student information
-
-namespace AverageGrades
+﻿namespace AverageGrades
 {
     using System.Linq;
 
+    /// <summary>
+    /// Class for holding student information
+    /// </summary>
     public class Students
     {
         public string Name { get; set; }

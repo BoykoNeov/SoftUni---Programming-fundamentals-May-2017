@@ -1,10 +1,11 @@
-﻿// Class for holding customer Name and Buys
-
-namespace AndreyAndBilliard
+﻿namespace AndreyAndBilliard
 {
     using System.Collections.Generic;
 
-   public class Customer
+    /// <summary>
+    /// Class for holding customer Name and Buys
+    /// </summary>
+    public class Customer
     {
        public string Name { get; set; }
 

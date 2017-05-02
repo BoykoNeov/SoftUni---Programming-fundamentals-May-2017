@@ -1,8 +1,9 @@
-﻿// Calculate factorial from a number and count its trailing zeros
-
-using System;
+﻿using System;
 using System.Numerics;
 
+/// <summary>
+/// Calculate factorial from a number and count its trailing zeros
+/// </summary>
 public class Factorial
 {
     public static void Main()

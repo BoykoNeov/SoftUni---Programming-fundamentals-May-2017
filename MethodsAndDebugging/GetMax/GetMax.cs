@@ -1,7 +1,8 @@
-﻿// get the bigger of three numbers using recursion
+﻿using System;
 
-using System;
-
+/// <summary>
+/// get the bigger of three numbers using recursion
+/// </summary>
 public class GetMax
 {
     public static void Main()

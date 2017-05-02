@@ -1,8 +1,10 @@
-﻿// Testing what SoftUni Judge run data (like memory usage and time) correlate with Thread.Sleep and arrays of different sizes
-
-using System;
+﻿using System;
 using System.Threading;
 
+/// <summary>
+///  Testing what SoftUni Judge run data (like memory usage and time) correlate with Thread.Sleep and
+///  arrays of different sizes
+/// </summary>
 public class ExperimentingWithJudge
 {
     public static void Main()

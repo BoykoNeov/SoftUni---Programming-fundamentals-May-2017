@@ -1,7 +1,8 @@
-﻿// Enter two points coordinates and calculates which is closer to the center of the coordinate system
+﻿using System;
 
-using System;
-
+/// <summary>
+/// Enter two points coordinates and calculates which is closer to the center of the coordinate system
+/// </summary>
 public class CenterPoint
 {
     public static void Main()

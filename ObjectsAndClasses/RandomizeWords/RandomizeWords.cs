@@ -1,8 +1,9 @@
-﻿// You are given a list of words in one line. Randomize their order and print each word at a separate line.
-
-using System;
+﻿using System;
 using System.Linq;
 
+/// <summary>
+/// You are given a list of words in one line. Randomize their order and print each word at a separate line.
+/// </summary>
 public class RandomizeWords
 {
     public static void Main()

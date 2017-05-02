@@ -1,8 +1,9 @@
-﻿// The program accepts two integers on two lines and calculates the greates common divisor using Euclidean Algorithm and Recursion
-// The process of data entry is repeated until a valid integer is entered.
+﻿using System;
 
-using System;
-
+/// <summary>
+/// The program accepts two integers on two lines and calculates the greates common divisor using Euclidean Algorithm and Recursion
+/// The process of data entry is repeated until a valid integer is entered.
+/// </summary>
 public class Euclidean
 {
     public static void Main()

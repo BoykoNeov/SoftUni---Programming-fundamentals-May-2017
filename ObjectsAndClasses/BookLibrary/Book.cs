@@ -1,10 +1,10 @@
-﻿// Class containing individual book properties
-
-namespace BookLibrary
+﻿namespace BookLibrary
 {
     using System;
-
-   public class Book
+    /// <summary>
+    /// Class containing individual book properties
+    /// </summary>
+    public class Book
     {
         public string Title { get; set; }
 

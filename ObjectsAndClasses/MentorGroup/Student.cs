@@ -1,10 +1,11 @@
-﻿// Class for holding student info
-
-namespace MentorGroup
+﻿namespace MentorGroup
 {
     using System;
     using System.Collections.Generic;
 
+    /// <summary>
+    /// Class for holding student info
+    /// </summary>
     public class Student
     {
         public string Name { get; set; }

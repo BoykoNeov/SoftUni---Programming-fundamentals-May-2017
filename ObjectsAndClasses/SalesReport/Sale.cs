@@ -1,10 +1,11 @@
-﻿// A class "Sale" holding the following data: town, product, price, quantity.
-
-namespace SalesReport
+﻿namespace SalesReport
 {
     using System;
     using System.Linq;
 
+    /// <summary>
+    /// A class "Sale" holding the following data: town, product, price, quantity.
+    /// </summary>
     public class Sale
     {
         public string Town { get; set; }

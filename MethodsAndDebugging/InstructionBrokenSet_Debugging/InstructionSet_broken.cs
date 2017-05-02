@@ -2,6 +2,18 @@
 
 using System;
 
+/// <summary>
+/// Debugging Exercise: Instruction Set
+/// Write an ** instruction interpreter** that executes an arbitrary number of** instructions.** The program should** parse the
+///  instructions, execute** them and** print the result.** The following instruction set should be supported:
+/// - **INC &lt; operand1&gt;** – increments the operand by 1
+/// - ** DEC &lt;operand1&gt;** – decrements the operand by 1
+/// + ** ADD &lt;operand1&gt; &lt;operand2&gt;** – performs addition on the two operands
+/// - ** MLA &lt;operand1&gt; &lt;operand2&gt;**– performs multiplication on the two operands
+/// - ** END** – end of input
+/// The result of each instruction should be printed on a separate line on the console.
+/// - The operands will be valid integers in the range [−2 147 483 648 … 2 147 483 647].
+/// </summary>
 public class InstructionSet_broken
 {
     public static void Main()

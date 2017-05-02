@@ -23,7 +23,7 @@ namespace RecursiveDirectoryListing
             }
 
             string prefix = " ";
-            var list2 = RecurseList(currentDirectory.Parent.Parent.FullName, prefix);
+            var list2 = RecurseList(currentDirectory.FullName, prefix);
             Console.WriteLine(string.Join(Environment.NewLine, list2.FilesAndDirectoriesList));
         }
 

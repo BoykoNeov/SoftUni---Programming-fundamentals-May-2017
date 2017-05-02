@@ -1,6 +1,7 @@
-﻿// Write a program that reads two dates in format dd-MM-yyyy and 
-// prints the number of working days between these two dates inclusive. 
-
+﻿/// <summary>
+/// Write a program that reads two dates in format dd-MM-yyyy and 
+/// prints the number of working days between these two dates inclusive.
+/// </summary>
 namespace CountWorkingDays
 {
     using System;

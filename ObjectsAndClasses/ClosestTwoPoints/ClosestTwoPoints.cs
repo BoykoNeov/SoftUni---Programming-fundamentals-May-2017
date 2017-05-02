@@ -1,5 +1,6 @@
-﻿// Write a program to read n points and find the closest two of them.
-
+﻿/// <summary>
+/// Write a program to read n points and find the closest two of them.
+/// </summary>
 namespace ClosestTwoPoints
 {
     using System;

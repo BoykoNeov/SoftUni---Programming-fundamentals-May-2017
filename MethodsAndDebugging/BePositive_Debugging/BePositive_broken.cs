@@ -1,8 +1,9 @@
-﻿//Soft uni debugging excercise from Programing Fundamentals - Methods and debugging
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 
+/// <summary>
+/// Soft uni debugging excercise from Programing Fundamentals - Methods and debugging
+/// </summary>
 public class BePositive_broken
 {
     public static void Main()

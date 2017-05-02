@@ -1,6 +1,7 @@
-﻿// Read a list of sales and calculate and print the total sales by town as shown in the output.
-// Order alphabetically the towns in the output.
-
+﻿/// <summary>
+/// Read a list of sales and calculate and print the total sales by town as shown in the output.
+/// Order alphabetically the towns in the output.
+/// </summary>
 namespace SalesReport
 {
     using System;

@@ -4,6 +4,9 @@
     using System.Collections.Generic;
     using System.Globalization;
 
+    /// <summary>
+    /// Class holding town infomration
+    /// </summary>
    public class Town
     {
         public string TownName { get; set; }

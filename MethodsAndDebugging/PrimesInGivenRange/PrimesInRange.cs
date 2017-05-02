@@ -2,6 +2,9 @@
 using System.Text;
 using System.Diagnostics;
 
+/// <summary>
+/// Displays primes in a given range
+/// </summary>
 public class PrimesInRange
 {
     public static void Main()

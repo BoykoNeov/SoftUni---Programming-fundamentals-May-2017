@@ -1,11 +1,12 @@
-﻿// Class for holding the properties of a rectangle and associated methods
-// for getting rectangle properties from a string and calculating if a rectangle is inside another
-
-using System;
+﻿using System;
 using System.Linq;
 
 namespace RectanglePosition
 {
+    /// <summary>
+    /// Class for holding the properties of a rectangle and associated methods
+    /// for getting rectangle properties from a string and calculating if a rectangle is inside another
+    /// </summary>
     public class Rectangle
     {
         double Left { get; set; }

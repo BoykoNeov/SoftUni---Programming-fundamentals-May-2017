@@ -1,9 +1,10 @@
-﻿// Calculate factorial from a number and write the result to a file
-
-using System;
+﻿using System;
 using System.IO;
 using System.Numerics;
 
+/// <summary>
+/// Calculate factorial from a number and write the result to a file
+/// </summary>
 public class FactorialToFile
 {
     public static void Main()

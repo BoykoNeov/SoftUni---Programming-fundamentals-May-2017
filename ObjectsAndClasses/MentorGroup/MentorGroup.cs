@@ -1,5 +1,20 @@
-﻿// Task "Mentor Group", for details check ../07. Programming-Fundamentals-Objects-and-Classes-Exercises.docx
-
+﻿/// <summary>
+/// Task "Mentor Group"
+/// You are mentor of a group. You have done your job well and now you have to generate a report
+/// about your group's activity. You will be given usernames and dates **("dd/MM/yyyy")**, dates
+/// **(if any)** are separated with comma, until you receive command **"end of dates"**. After
+/// that you will receive user and some comment (separated with dash). You can add comment for every 
+/// user who is **in** your group (if **not** ignore the line). Adding comment/date to same user more
+/// than once should **append** to that user the comment/date. Upon receiving command **"end of comments"** 
+/// you should generate report in format:
+/// \{user} -
+/// Comments:
+/// \- \{firstComment} …
+/// Dates attended:
+/// -- \{firstDate}
+/// -- \{secondDate}
+/// Users should be printed ordered by name(ascending). For every user dates should be sorted again in ascending order.Input will be valid for in the format described - you should **not check** it explicitly!
+/// </summary>
 namespace MentorGroup
 {
     using System;

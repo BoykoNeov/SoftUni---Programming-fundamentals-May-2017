@@ -1,7 +1,8 @@
-﻿// Program for testing basic shifting arrays algorithms
-using System;
-using System.Diagnostics;
+﻿using System;
 
+/// <summary>
+/// Program for testing basic shifting arrays algorithms
+/// </summary>
 public class ShiftingArrays
 {
     public static void Main()

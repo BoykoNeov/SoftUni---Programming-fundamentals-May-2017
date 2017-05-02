@@ -1,10 +1,19 @@
-﻿// Task Legendary Farming
-// Check the file ../06. Programming-Fundamentals-Dictionaries-Lambda-LINQ-Exercises for task description
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
+/// <summary>
+/// Task "Legendary Farming"
+/// The possible items are:
+/// - Shadowmourne – requires 250 Shards;
+/// - Valanyr – requires 250 Fragments;
+/// - Dragonwrath – requires 250 Motes;
+/// Shards, Fragments and Motes are the key materials, all else is junk.You will be given lines of input, such as 
+/// 2 motes 3 ores 15 stones.Keep track of the key materials - the first that reaches the 250 mark wins the race.
+/// At that point, print the corresponding legendary obtained.Then, print the remaining shards, fragments, motes,
+/// ordered by quantity in descending order, then by name in ascending order, each on a new line.Finally, print
+/// the collected junk items, in alphabetical order.
+/// </summary>
 public class LegendaryFarming
 {
     public static void Main()

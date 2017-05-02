@@ -1,8 +1,9 @@
-﻿// You are given a date in format day-month-year. Calculate and print the day of week in English.
-
-using System;
+﻿using System;
 using System.Globalization;
 
+/// <summary>
+/// You are given a date in format day-month-year. Calculate and print the day of week in English.
+/// </summary>
 public class DayOfWeek
 {
     public static void Main()

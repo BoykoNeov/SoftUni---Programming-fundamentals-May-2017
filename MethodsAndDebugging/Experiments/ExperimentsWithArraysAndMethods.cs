@@ -1,6 +1,8 @@
-﻿// Playing around with methods and arrays
-using System;
+﻿using System;
 
+/// <summary>
+/// Playing around with methods and arrays
+/// </summary>
 public class ExperimentsWithArraysAndMethods
 {
     public static void Main()

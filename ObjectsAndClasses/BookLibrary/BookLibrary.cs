@@ -1,5 +1,13 @@
-﻿// Task "Book library", for details check ../07. Programming-Fundamentals-Objects-and-Classes-Exercises.docx
-
+﻿/// <summary>
+/// Task "Book library"
+/// To model a book library, define classes to hold a book and a library.
+/// The library must have a name and a list of books. The books must contain the title, 
+/// author, publisher, release date, ISBN-number and price. 
+/// Read a  list of books, add them to the library and print the  total sum of prices by
+/// author, ordered descending by price and  then by author’s name lexicographically.
+/// Books in the input will be in format{title
+/// } {author} {publisher} {release date} {ISBN} {price}.
+/// </summary>
 namespace BookLibrary
 {
 using System;

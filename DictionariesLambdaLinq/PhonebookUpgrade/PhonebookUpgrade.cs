@@ -1,10 +1,11 @@
-﻿// Add functionality to the phonebook from the previous task to print all
-// contacts ordered lexicographically when receive the command “ListAll”.
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
+/// <summary>
+/// Add functionality to the phonebook from the previous task to print all
+/// contacts ordered lexicographically when receive the command “ListAll”.
+/// </summary>
 public class PhonebookUpgrade
 {
     public static void Main()

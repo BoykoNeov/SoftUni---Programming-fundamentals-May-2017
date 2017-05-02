@@ -1,5 +1,14 @@
-﻿// Task "Andrey And Billiard", for details check ../07. Programming-Fundamentals-Objects-and-Classes-Exercises.docx
-
+﻿/// <summary>
+///  Task "Andrey And Billiard"
+///  First you will receive an integer - the amount of entities with prices (separated by "-").
+///  Then you will receive a list of client. For every consumer you will receive what to buy and how much. When you receive a command: "end of clients" you should display information about every client described below. After that say how much total money were spent while Andrey was playing billiard.
+/// - If an entity is added more than once you should  override the previous price.
+/// - If buyer tries to buy an entity that is not existing - you should ignore that line.
+/// - Buyers should be ordered by name ascending.
+/// - All floating point digits must be rounded to 2 digits after decimal separator.
+/// - In the end of every buyer his bill should be summed.
+/// - Quantity is an integer. Price – floating point.
+/// </summary>
 namespace AndreyAndBilliard
 {
     using System;

@@ -1,10 +1,10 @@
-﻿//Calculate a Fibonacci sequence to n-th number (or n-th + 1, depending on definition) using recursion or not
-
-using System;
+﻿using System;
 using System.Numerics;
 using System.Diagnostics;
-using System.Threading;
 
+/// <summary>
+/// Calculate a Fibonacci sequence to n-th number (or n-th + 1, depending on definition) using recursion or not
+/// </summary>
 public class RecursiveFibonacci
 {
     public static void Main()

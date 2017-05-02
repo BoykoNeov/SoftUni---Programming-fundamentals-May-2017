@@ -1,6 +1,8 @@
-﻿// Testing passing arrays to methods and returning arrays from methods
-using System;
+﻿using System;
 
+/// <summary>
+/// Testing passing arrays to methods and returning arrays from methods
+/// </summary>
 public class ArraysToAndFromMethodsTest
 {
     public static void Main()

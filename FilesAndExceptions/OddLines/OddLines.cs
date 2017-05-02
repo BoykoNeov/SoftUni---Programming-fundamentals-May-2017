@@ -1,9 +1,10 @@
-﻿// Write a program that reads a text file and writes its every odd line in another file. Line numbers starts from 0. 
-
-using System;
+﻿using System;
 using System.IO;
 using System.Text;
 
+/// <summary>
+/// Write a program that reads a text file and writes its every odd line in another file. Line numbers starts from 0. 
+/// </summary>
 public class OddLines
 {
     public static void Main()

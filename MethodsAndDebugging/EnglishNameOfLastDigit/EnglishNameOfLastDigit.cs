@@ -1,7 +1,8 @@
-﻿// Reads an integer (a string more correctly) from the console and returns the name of the last digit in English
+﻿using System;
 
-using System;
-
+/// <summary>
+/// Reads an integer (a string more correctly) from the console and returns the name of the last digit in English
+/// </summary>
 public class EnglishNameOfLastDigit
 {
     public static void Main()
