@@ -10,7 +10,7 @@ namespace ReplaceATag
 
     class ReplaceATag
     {
-        static void Main(string[] args)
+        static void Main()
         {
             string input = string.Empty;
             string HTMLdocument = string.Empty;
