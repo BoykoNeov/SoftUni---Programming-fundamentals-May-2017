@@ -15,7 +15,7 @@ namespace ExtractEmails
     using System;
     using System.Text.RegularExpressions;
 
-    public class ExtcractEmails
+    public class ExtractEmails
     {
         public static void Main()
         {
