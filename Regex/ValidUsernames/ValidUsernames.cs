@@ -15,15 +15,41 @@ namespace ValidUsernames
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+    using System.Text.RegularExpressions;
 
     public class ValidUsernames
     {
         public static void Main()
         {
-            string pattern = @"\b[^\(\) ,\\\/\n\r_][^\(\) ,\\\/\n\r]{2,24}\b";
+            string inputString = Console.ReadLine();
+            string pattern = @"\b[A-Za-z][\w|_]{2,24}\b";
+            Regex userRegex = new Regex(pattern);
+
+            var matches = userRegex.Matches(inputString);
+            List<string> usernames = new List<string>();
+            foreach (Match match in matches)
+            {
+                usernames.Add(match.Value);
+            }
+
+            int longestPairLength = 0;
+            for (int i = 0; i < usernames.Count - 1; i++)
+            {
+                if (usernames[i].Length + usernames[i+1].Length > longestPairLength)
+                {
+                    longestPairLength = usernames[i].Length + usernames[i + 1].Length;
+                }
+            }
+
+            for (int i = 0; i < usernames.Count - 1; i++)
+            {
+                if (usernames[i].Length + usernames[i + 1].Length == longestPairLength)
+                {
+                    Console.WriteLine(usernames[i]);
+                    Console.WriteLine(usernames[i+1]);
+                    break;
+                }
+            }
         }
     }
 }
