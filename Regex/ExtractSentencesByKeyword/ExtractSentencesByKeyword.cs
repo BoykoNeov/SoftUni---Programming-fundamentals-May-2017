@@ -16,8 +16,10 @@ namespace ExtractSentencesByKeyword
         {
             string keyword = Console.ReadLine();
             string inputText = Console.ReadLine();
-            string regexFirstPart = @"[A-Z][\w+\s,-]+ ";
-            string regexSecondPart = @" [\w+\s,-]+(?=[.?!])";
+
+            string regexFirstPart = @"\w[^.!?]*\b";
+            string regexSecondPart = @"\b[^.!?]*(?=[.!?])";
+
             string regexString = string.Concat(regexFirstPart,keyword,regexSecondPart);
             Regex keywordRegex = new Regex(regexString);
 
