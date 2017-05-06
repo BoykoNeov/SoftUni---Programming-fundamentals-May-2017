@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceATag", "ReplaceATag\ReplaceATag.csproj", "{E138657E-C646-4CEA-B67E-CF32E4FD2584}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractSentencesByKeyword", "ExtractSentencesByKeyword\ExtractSentencesByKeyword.csproj", "{F1CEF1B1-326D-41A8-BF6D-F0586AE3E6CF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidUsernames", "ValidUsernames\ValidUsernames.csproj", "{D4E6AD2C-35D9-4DAE-9A51-1EF1FBA0D46F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueryMess", "QueryMess\QueryMess.csproj", "{2BA72944-0994-4F04-B954-B6D9F4025E94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{D4E6AD2C-35D9-4DAE-9A51-1EF1FBA0D46F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4E6AD2C-35D9-4DAE-9A51-1EF1FBA0D46F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4E6AD2C-35D9-4DAE-9A51-1EF1FBA0D46F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BA72944-0994-4F04-B954-B6D9F4025E94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BA72944-0994-4F04-B954-B6D9F4025E94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BA72944-0994-4F04-B954-B6D9F4025E94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BA72944-0994-4F04-B954-B6D9F4025E94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
