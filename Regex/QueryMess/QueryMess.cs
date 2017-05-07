@@ -15,9 +15,9 @@ namespace QueryMess
     using System.Collections.Generic;
     using System.Linq;
 
-   public class QueryMess
+    public class QueryMess
     {
-       public static void Main()
+        public static void Main()
         {
             string consoleInput = string.Empty;
             while ((consoleInput = Console.ReadLine()) != "END")
@@ -25,38 +25,6 @@ namespace QueryMess
                 string whitespacesEncoding = @"((%20)|\+)+";
                 Regex emptySpaces = new Regex(whitespacesEncoding);
                 consoleInput = emptySpaces.Replace(consoleInput, " ");
-                var inputLines = consoleInput.Split(new char[] { '&' }, StringSplitOptions.RemoveEmptyEntries);
-                Dictionary<string, string> queries = new Dictionary<string, string>();
-
-                foreach (string inputLine in inputLines)
-                {
-                    List<string> queryInput = inputLine.
-                        Split(new char[] { '=', ' ' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-                    
-                        // must revork this section to split for '?' and check if contains '='
-                    if (queries.ContainsKey(queryInput[0]))
-                    {
-                        string tempQueryKey = queryInput[0];
-                        string tempQueryValue = queries[queryInput[0]];
-                        queryInput.RemoveAt(0);
-                        queryInput.Insert(0, tempQueryValue);
-                        tempQueryValue = string.Join(", ", queryInput);
-                        queries[tempQueryKey] = tempQueryValue;
-                    }
-                    else
-                    {
-                        string tempQueryKey = queryInput[0];
-                        queryInput.RemoveAt(0);
-                        string tempQueryValue = string.Join(" ,", queryInput);
-                        queries[tempQueryKey] = tempQueryValue;
-                    }
-                }
-
-                foreach (var kvp in queries)
-                {
-                    Console.Write($"{kvp.Key}=[{kvp.Value}]");
-                }
-                Console.WriteLine();
             }
         }
     }
