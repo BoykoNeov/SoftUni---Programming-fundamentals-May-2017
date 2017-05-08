@@ -13,7 +13,6 @@ namespace QueryMess
     using System;
     using System.Text.RegularExpressions;
     using System.Collections.Generic;
-    using System.Linq;
 
     public class QueryMess
     {
@@ -25,6 +24,33 @@ namespace QueryMess
                 string whitespacesEncoding = @"((%20)|\+)+";
                 Regex emptySpaces = new Regex(whitespacesEncoding);
                 consoleInput = emptySpaces.Replace(consoleInput, " ");
+
+                string queriesPattern = @"([^&?\n=]+)=([^&?\n=]+)";
+                Regex queriesRegex = new Regex(queriesPattern);
+                MatchCollection matches = queriesRegex.Matches(consoleInput);
+
+                Dictionary<string, List<string>> queries = new Dictionary<string, List<string>>();
+
+                foreach (Match match in matches)
+                {
+                    string queryKey = match.Groups[1].Value.Trim();
+                    string queryValues = match.Groups[2].Value.Trim();
+
+                    if (!queries.ContainsKey(queryKey))
+                    {
+                        queries[queryKey] = new List<string>();
+                    }
+
+                    queries[queryKey].Add(queryValues);
+                }
+
+                foreach (KeyValuePair<string, List<string>> currentQueryOutput in queries)
+                {
+                    string queryValueOutput = string.Join(", ", currentQueryOutput.Value);
+                    Console.Write($"{currentQueryOutput.Key}=[{queryValueOutput}]");
+                }
+
+                Console.WriteLine();
             }
         }
     }
