@@ -10,7 +10,7 @@
 /// Output:
 /// Print on a single line the decrypted text of the manual. See the given examples below.
 /// Constraints:
-///	Allowed working time: 0.2 seconds.Allowed memory: 16 MB.
+///	Allowed working time: 0.2 seconds. Allowed memory: 16 MB
 /// </summary>
 namespace UseYourChainsBuddy
 {
@@ -25,16 +25,45 @@ namespace UseYourChainsBuddy
             string input = Console.ReadLine();
             Regex pTags = new Regex(@"(?<=<p>).*?(?=<\/p>)");
             MatchCollection matches = pTags.Matches(input);
-            StringBuilder currentState = new StringBuilder();
+            StringBuilder afterPtagsMatch = new StringBuilder();
             foreach (Match match in matches)
             {
-                currentState.Append(match);
-                currentState.Append(" ");
+                afterPtagsMatch.Append(match);
+                afterPtagsMatch.Append(string.Empty);
             }
-            Console.WriteLine(currentState.ToString());
-            Regex nonSmallLettersOrNumbers = new Regex (@"[^a-z0-9]+");
 
+            Regex nonSmallLettersOrNumbers = new Regex(@"[^a-z0-9]+");
+            string afterReplacingNonSmallLettersOrNumbers = nonSmallLettersOrNumbers
+                .Replace(afterPtagsMatch.ToString(), " ");
 
+            // English alphabet has 26 symbols
+            char[] alphabet = new char[26];
+            alphabet = "abcdefghijklmnopqrstuvwxyz".ToCharArray();
+            StringBuilder afterDecoding = new StringBuilder(afterReplacingNonSmallLettersOrNumbers.Length);
+
+            for (int i = 0; i < afterReplacingNonSmallLettersOrNumbers.Length; i++)
+            {
+                char currentChar = afterReplacingNonSmallLettersOrNumbers[i];
+
+                if (currentChar >= 'a' && currentChar <= 'm')
+                {
+                    afterDecoding.Append((char)(currentChar + 13));
+                }
+                else if (currentChar >= 'n' && currentChar <= 'z')
+                {
+                    afterDecoding.Append((char)(currentChar - 13));
+                }
+                else
+                {
+                    afterDecoding.Append(currentChar);
+                }
+            }
+
+            string[] output = afterDecoding.ToString()
+                .ToString()
+                .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+
+            Console.WriteLine(string.Join(" ", output));
         }
     }
 }
