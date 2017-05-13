@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharityMarathon", "CharityMarathon\CharityMarathon.csproj", "{6E4C0BDD-2131-4880-804A-18FC4DD240BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ladybugs", "Ladybugs\Ladybugs.csproj", "{E7870C16-3F7A-41A6-BEB3-6CB2427B6D21}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6E4C0BDD-2131-4880-804A-18FC4DD240BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E4C0BDD-2131-4880-804A-18FC4DD240BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E4C0BDD-2131-4880-804A-18FC4DD240BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7870C16-3F7A-41A6-BEB3-6CB2427B6D21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7870C16-3F7A-41A6-BEB3-6CB2427B6D21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7870C16-3F7A-41A6-BEB3-6CB2427B6D21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7870C16-3F7A-41A6-BEB3-6CB2427B6D21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
