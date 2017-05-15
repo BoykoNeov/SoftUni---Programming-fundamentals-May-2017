@@ -22,6 +22,8 @@ namespace Ladybugs
 {
     using System;
     using System.Linq;
+    using System.Collections.Generic;
+    using System.Text;
 
     public class Ladybugs
     {
@@ -29,16 +31,15 @@ namespace Ladybugs
         {
             int fieldSize = int.Parse(Console.ReadLine());
             int[] ladybugIndexesInput = Console.ReadLine()
-                .Split(new char[] {' '}, StringSplitOptions.RemoveEmptyEntries)
+                .Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
                 .Select(int.Parse)
                 .ToArray();
-            bool[] ladybygIndexes = new bool[fieldSize];
+            HashSet<int> ladybugIndexes = new HashSet<int>();
+
+            // should this be checked for corrctness?
             foreach (int index in ladybugIndexesInput)
             {
-                if (index > 0 && index < fieldSize)
-                {
-                    ladybygIndexes[index] = true;
-                }
+                ladybugIndexes.Add(index);
             }
 
             string commandsInput = string.Empty;
@@ -63,17 +64,51 @@ namespace Ladybugs
                 }
 
                 int jump = int.Parse(commands[2]);
-                if (ladybug < 0 
-                    || ladybug > fieldSize
-                    || !ladybygIndexes[ladybug])
+                if (ladybug < 0
+                    || ladybug >= fieldSize
+                    || !ladybugIndexes.Contains(ladybug))
                 {
                     continue;
                 }
 
-                long destinationIndex = ladybug + (jump * direction);
+                ladybugIndexes.Remove(ladybug);
+                while (true)
+                {
+                    long destinationIndex = ladybug + (jump * direction);
+                    if (destinationIndex >= fieldSize || destinationIndex < 0)
+                    {
+                        break;
+                    }
 
+                    if (ladybugIndexes.Contains((int)(destinationIndex)))
+                    {
+                        ladybug = (int)destinationIndex;
+                    }
+                    else
+                    {
+                        ladybugIndexes.Add((int)destinationIndex);
+                        break;
+                    }
+                }
             }
 
+            StringBuilder output = new StringBuilder();
+            for (int i = 0; i < fieldSize; i++)
+            {
+                if (ladybugIndexes.Contains(i))
+                {
+                    output.Append(1);
+                }
+                else
+                {
+                    output.Append(0);
+                }
+
+                output.Append(" ");
+            }
+
+                string consoleOutput = output.ToString().Trim();
+                Console.WriteLine(consoleOutput);
         }
     }
 }
