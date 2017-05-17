@@ -46,8 +46,6 @@ namespace NetherRealms
 
             Dictionary<string, double[]> demons = new Dictionary<string, double[]>();
 
-            Regex multiplyOrDivideRegex = new Regex(@"(\*|\/)\1*"); // pattern for matching '*' and '/'
-
             foreach (string demon in demonNames)
             {
                 Regex lettersRegex = new Regex(@"[^\d+\-*\/\.]+"); //pattern for selecting everything except digits and special symbols)
@@ -61,10 +59,40 @@ namespace NetherRealms
                     }
                 }
 
+                demons.Add(demon, new double[2]);
                 demons[demon][0] = demonHealth;
 
                 Regex digitsRegex = new Regex(@"[+|-]?\d+\.?\d*"); // pattern for selecting digits)
+                MatchCollection digits = digitsRegex.Matches(demon);
+                double demonDamage = 0;
+                foreach (Match match in digits)
+                {
+                    demonDamage += double.Parse(match.ToString());
+                }
 
+                Regex multiplyOrDivideRegex = new Regex(@"\*|\/"); // pattern for matching '*' and '/'
+                MatchCollection multiplyOrDivide = multiplyOrDivideRegex.Matches(demon);
+                foreach (Match match in multiplyOrDivide)
+                {
+                    if (match.ToString() == "*")
+                    {
+                        demonDamage *= 2;
+                    }
+                    else
+                    {
+                        demonDamage /= 2;
+                    }
+                }
+
+                demons[demon][1] = demonDamage;
+
+            }
+
+            foreach (var kvp in demons.OrderBy(x => x.Key))
+            {
+                var damage = demons[kvp.Key][1];
+                var health = demons[kvp.Key][0];
+                Console.WriteLine($"{kvp.Key} - {health} health, {damage:f2} damage");
             }
         }
     }
