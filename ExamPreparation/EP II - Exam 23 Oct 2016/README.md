@@ -98,3 +98,32 @@ After you receive **"Time for Code",** you need to **print** the results. All ev
 - All events must be sorted in **descending** order by participant count and **then by alphabetical order**. For each event you need to print:
 **{eventName} – {participantCount}**
 - On the next lines you need to print all participants. All participants for an event must be sorted alphabetically.
+
+**Input | **Output
+------- | --------
+|1 #Beers @roli @trophon @alice | Karaoke - 4
+|2 #GameDevMeetup @sino @valyo |  @ivo 
+|3 #Karaoke @nakov @royal @ROYAL @ivo | @nakov 
+|Time for Code | @royal 
+|| @ROYAL | 
+|| Beers - 3 |
+|| @alice |
+|| @roli |
+|| @trophon |
+|| GameDevMeetup - 2 |
+|| @sino |
+|| @valyo |
+
+
+
+**Input | **Output
+------- | --------
+1 #Beers @roli @trophon @alice | Beers - 4
+2 #GameDevMeetup @sino @valyo | @alice
+1 #Beers2 @nakov @royal @ROYAL @ivo | @roli
+1 #Beers @roli @trophon @alice @sino | @sino
+3 #Rakia | @trophon
+Time for Code | GameDevMeetup - 2
+|| @sino
+|| @valyo
+|| Rakia - 0

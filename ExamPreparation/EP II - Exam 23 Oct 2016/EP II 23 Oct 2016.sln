@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharityMarathon", "CharityMarathon\CharityMarathon.csproj", "{6E4C0BDD-2131-4880-804A-18FC4DD240BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ladybugs", "Ladybugs\Ladybugs.csproj", "{E7870C16-3F7A-41A6-BEB3-6CB2427B6D21}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetherRealms", "NetherRealms\NetherRealms.csproj", "{6A7A4E41-3663-43BC-BB6D-C0E404404F34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoliTheCoder", "RoliTheCoder\RoliTheCoder.csproj", "{D33362EB-A67D-44D1-96EE-E04FAA3FC8FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{6A7A4E41-3663-43BC-BB6D-C0E404404F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A7A4E41-3663-43BC-BB6D-C0E404404F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A7A4E41-3663-43BC-BB6D-C0E404404F34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D33362EB-A67D-44D1-96EE-E04FAA3FC8FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D33362EB-A67D-44D1-96EE-E04FAA3FC8FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D33362EB-A67D-44D1-96EE-E04FAA3FC8FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D33362EB-A67D-44D1-96EE-E04FAA3FC8FC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
