@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftUniCoffeeOrders", "SoftUniCoffeeOrders\SoftUniCoffeeOrders.csproj", "{A236FA6F-41D8-4B6E-ACB4-8C08047A34CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandInterpreter", "CommandInterpreter\CommandInterpreter.csproj", "{CEF3ED48-DA5C-4F43-ADC9-23C266AE1AC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A236FA6F-41D8-4B6E-ACB4-8C08047A34CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A236FA6F-41D8-4B6E-ACB4-8C08047A34CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A236FA6F-41D8-4B6E-ACB4-8C08047A34CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEF3ED48-DA5C-4F43-ADC9-23C266AE1AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEF3ED48-DA5C-4F43-ADC9-23C266AE1AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEF3ED48-DA5C-4F43-ADC9-23C266AE1AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEF3ED48-DA5C-4F43-ADC9-23C266AE1AC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
