@@ -32,7 +32,7 @@ namespace Files
 
             for (int i = 0; i < inputsCount; i++)
             {
-                string[] filesInput = Console.ReadLine().Split(new char[] { '\\', '.', ';' }, StringSplitOptions.RemoveEmptyEntries);
+                string[] filesInput = Console.ReadLine().Split(new char[] { '\\', ';' }, StringSplitOptions.RemoveEmptyEntries);
                 inputLines.Add(filesInput);
             }
 
@@ -50,14 +50,16 @@ namespace Files
                     continue;
                 }
 
-                string fileExtention = inputLine[inputLine.Length - 2];
+                string[] getExtension = inputLine[inputLine.Length - 2].Split(new char[] { '.' });
+
+                string fileExtention = getExtension[getExtension.Length-1];
                 if (fileExtention != searchExtension)
                 {
                     continue;
                 }
 
                 long fileSize = long.Parse(inputLine[inputLine.Length - 1]);
-                string fileName = inputLine[inputLine.Length - 3];
+                string fileName = inputLine[inputLine.Length - 2];
 
                 files[fileName] = fileSize;
             }
@@ -70,7 +72,7 @@ namespace Files
 
             foreach (var kvp in files.OrderByDescending(x => x.Value).ThenBy(x => x.Key))
             {
-                Console.WriteLine($"{kvp.Key}.{searchExtension} - {kvp.Value} KB");
+                Console.WriteLine($"{kvp.Key} - {kvp.Value} KB");
             }
         }
     }
