@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C0AEB53E-6B9F-402A-BC7D-3A4F38AA20CE}</ProjectGuid>
+    <ProjectGuid>{C2281424-7E89-4AA5-8A0A-BF930B836112}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Hotel</RootNamespace>
-    <AssemblyName>Hotel</AssemblyName>
+    <RootNamespace>TestNumbers</RootNamespace>
+    <AssemblyName>TestNumbers</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Hotel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestNumbers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

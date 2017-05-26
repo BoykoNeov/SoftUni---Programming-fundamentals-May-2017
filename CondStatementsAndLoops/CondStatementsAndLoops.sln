@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountTheIntegers", "CountTh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TriangleOfNumbers", "TriangleOfNumbers\TriangleOfNumbers.csproj", "{5BC83960-AAB4-4DB0-B633-DEB6F8D0F1C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiveDifferentNumbers", "FiveDifferentNumbers\FiveDifferentNumbers.csproj", "{3FD12507-A757-4972-9917-9B21A9FFD4CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestNumbers", "TestNumbers\TestNumbers.csproj", "{C2281424-7E89-4AA5-8A0A-BF930B836112}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{5BC83960-AAB4-4DB0-B633-DEB6F8D0F1C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5BC83960-AAB4-4DB0-B633-DEB6F8D0F1C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5BC83960-AAB4-4DB0-B633-DEB6F8D0F1C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FD12507-A757-4972-9917-9B21A9FFD4CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FD12507-A757-4972-9917-9B21A9FFD4CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FD12507-A757-4972-9917-9B21A9FFD4CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FD12507-A757-4972-9917-9B21A9FFD4CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2281424-7E89-4AA5-8A0A-BF930B836112}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2281424-7E89-4AA5-8A0A-BF930B836112}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2281424-7E89-4AA5-8A0A-BF930B836112}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2281424-7E89-4AA5-8A0A-BF930B836112}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
