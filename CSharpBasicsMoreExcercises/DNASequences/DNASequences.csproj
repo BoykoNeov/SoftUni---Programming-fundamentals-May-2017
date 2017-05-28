@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FD12507-A757-4972-9917-9B21A9FFD4CC}</ProjectGuid>
+    <ProjectGuid>{6DC649E3-D9A5-4707-A077-336EFFFB9E4A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FiveDifferentNumbers</RootNamespace>
-    <AssemblyName>FiveDifferentNumbers</AssemblyName>
+    <RootNamespace>DNASequences</RootNamespace>
+    <AssemblyName>DNASequences</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FiveDifferentNumbers.cs" />
+    <Compile Include="DNASequences.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

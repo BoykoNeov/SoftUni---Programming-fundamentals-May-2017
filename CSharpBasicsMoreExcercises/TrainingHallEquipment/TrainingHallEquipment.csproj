@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FD12507-A757-4972-9917-9B21A9FFD4CC}</ProjectGuid>
+    <ProjectGuid>{62A83283-ECD8-455E-B22A-D3E6ABA9A384}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FiveDifferentNumbers</RootNamespace>
-    <AssemblyName>FiveDifferentNumbers</AssemblyName>
+    <RootNamespace>TrainingHallEquipment</RootNamespace>
+    <AssemblyName>TrainingHallEquipment</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FiveDifferentNumbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TrainingHallEquipment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

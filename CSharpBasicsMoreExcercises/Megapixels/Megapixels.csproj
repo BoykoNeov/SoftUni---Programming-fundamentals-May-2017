@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FD12507-A757-4972-9917-9B21A9FFD4CC}</ProjectGuid>
+    <ProjectGuid>{2C987B43-5DC8-46F8-A4E5-74E9E8967C7E}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FiveDifferentNumbers</RootNamespace>
-    <AssemblyName>FiveDifferentNumbers</AssemblyName>
+    <RootNamespace>Megapixels</RootNamespace>
+    <AssemblyName>Megapixels</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FiveDifferentNumbers.cs" />
+    <Compile Include="Megapixels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

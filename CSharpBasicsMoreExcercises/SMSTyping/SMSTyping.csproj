@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FD12507-A757-4972-9917-9B21A9FFD4CC}</ProjectGuid>
+    <ProjectGuid>{8A784C65-C763-40CB-AC47-6FD8F0312C44}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FiveDifferentNumbers</RootNamespace>
-    <AssemblyName>FiveDifferentNumbers</AssemblyName>
+    <RootNamespace>SMSTyping</RootNamespace>
+    <AssemblyName>SMSTyping</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,8 +42,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FiveDifferentNumbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMSTyping.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

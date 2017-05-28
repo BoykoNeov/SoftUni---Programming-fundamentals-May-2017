@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3FD12507-A757-4972-9917-9B21A9FFD4CC}</ProjectGuid>
+    <ProjectGuid>{5E8A7582-9DB5-4532-9714-4424C7D4794C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>FiveDifferentNumbers</RootNamespace>
-    <AssemblyName>FiveDifferentNumbers</AssemblyName>
+    <RootNamespace>NeighbourWars</RootNamespace>
+    <AssemblyName>NeighbourWars</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FiveDifferentNumbers.cs" />
+    <Compile Include="NeighbourWars.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
