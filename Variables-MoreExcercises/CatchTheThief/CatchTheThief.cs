@@ -1,6 +1,7 @@
 ﻿/// <summary>
 /// In the future, a very dangerous thief has escaped. Your mission is to catch him, but the only thing you know is the numeral type, which is his id.
-/// On the first line, you will receive the numeral type of thief’s id.On the second line, you will receive n – the number of ids you will receive.The person who has an id closest to the maximum value of the given numeral type without overflowing it is the thief’s id.
+/// On the first line, you will receive the numeral type of thief’s id.On the second line, you will receive n – the
+/// number of ids you will receive.The person who has an id closest to the maximum value of the given numeral type without overflowing it is the thief’s id.
 /// Input
 /// On the first line, you will receive the thief’s id numeral type. The type will always be one of the following: “sbyte”, “int” or “long”. 
 /// On the second line, you will receive n – the count of ids you are going to receive.Each will be on a new line.

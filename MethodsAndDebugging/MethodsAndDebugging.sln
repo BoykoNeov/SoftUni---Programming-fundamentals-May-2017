@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.10
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloName", "HelloName\HelloName.csproj", "{A92F547D-6DE9-49B5-816F-EAE55746F785}"
 EndProject
@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimesInGivenRange", "Prime
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CenterPoint", "CenterPoint\CenterPoint.csproj", "{F2855D50-09F9-4F7A-92B3-C8F4BDEA8A5E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "Factorial\Factorial.csproj", "{7D393F98-677D-45C1-9B67-6CB5EB53589F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactorialTrailingZeroes", "Factorial\FactorialTrailingZeroes.csproj", "{7D393F98-677D-45C1-9B67-6CB5EB53589F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefactoringBrokenSubstring", "RefactoringBrokenSubstring\RefactoringBrokenSubstring.csproj", "{91F1AE6A-7BD9-4300-AA37-8DFD705B1C30}"
 EndProject
@@ -34,6 +34,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysToAndFromMethodsTest", "ScratchPad\ArraysToAndFromMethodsTest.csproj", "{0B148D79-64A5-4F4F-937F-6B395A3FE1EE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiftingArraysTest", "ShiftingArraysTest\ShiftingArraysTest.csproj", "{BF554860-5823-4000-953A-F4DA4546042E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factorial", "FactorialWithoutTrailingZeroes\Factorial.csproj", "{F5E2B4C1-42AC-47D3-B4C2-E474BAB3576D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterNumbers", "MasterNumbers\MasterNumbers.csproj", "{D028FCB0-FEE9-4BBD-B4F7-70D3DAC8627C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,14 @@ Global
 		{BF554860-5823-4000-953A-F4DA4546042E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF554860-5823-4000-953A-F4DA4546042E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF554860-5823-4000-953A-F4DA4546042E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5E2B4C1-42AC-47D3-B4C2-E474BAB3576D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5E2B4C1-42AC-47D3-B4C2-E474BAB3576D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5E2B4C1-42AC-47D3-B4C2-E474BAB3576D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5E2B4C1-42AC-47D3-B4C2-E474BAB3576D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D028FCB0-FEE9-4BBD-B4F7-70D3DAC8627C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D028FCB0-FEE9-4BBD-B4F7-70D3DAC8627C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D028FCB0-FEE9-4BBD-B4F7-70D3DAC8627C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D028FCB0-FEE9-4BBD-B4F7-70D3DAC8627C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

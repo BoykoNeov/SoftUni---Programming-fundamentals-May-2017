@@ -4,7 +4,7 @@ using System.Numerics;
 /// <summary>
 /// Calculate factorial from a number and count its trailing zeros
 /// </summary>
-public class Factorial
+public class FactorialTrailingZeroes
 {
     public static void Main()
     {
