@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Text;
-using System.Diagnostics;
+//using System.Diagnostics;
 
 /// <summary>
 /// Displays primes in a given range
@@ -14,9 +14,14 @@ public class PrimesInRange
 
     public static void Primes(int a, int b)
     {
-        Stopwatch timer = new Stopwatch();
-        timer.Start();
+        //Stopwatch timer = new Stopwatch();
+        //timer.Start();
         StringBuilder output = new StringBuilder();
+        if (a < 2)
+        {
+            a = 2;
+        }
+
         for (int i = a; i <= b; i++)
         {
             bool isPrime = true;
@@ -34,9 +39,10 @@ public class PrimesInRange
                 output.Append(i).Append(", ");
             }
         }
-        timer.Stop();
+
+        //timer.Stop();
         output.Remove(output.Length - 2, 2);
         Console.WriteLine(output.ToString());
-        Console.WriteLine($"Time elapsed to find all numbers between {a} and {b} : {timer.Elapsed}");
+        //Console.WriteLine($"Time elapsed to find all numbers between {a} and {b} : {timer.Elapsed}");
     }
 }
