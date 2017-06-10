@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.0
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotateArray", "RotateArray\RotateArray.csproj", "{0CB2918F-DD08-4D19-A435-D816280D74EF}"
 EndProject
@@ -40,6 +40,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CondenseArrayToNumber", "CondenseArrayToNumber\CondenseArrayToNumber.csproj", "{EF87BD4E-BCCB-47A3-9005-E724FCA62F39}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractMiddleElements", "ExtractMiddleElements\ExtractMiddleElements.csproj", "{223D896C-474D-414B-9F22-DA9D08F25214}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayStatistics", "ArrayStatistics\ArrayStatistics.csproj", "{9E511D50-2858-402F-A387-698386065D71}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -123,6 +125,10 @@ Global
 		{223D896C-474D-414B-9F22-DA9D08F25214}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{223D896C-474D-414B-9F22-DA9D08F25214}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{223D896C-474D-414B-9F22-DA9D08F25214}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E511D50-2858-402F-A387-698386065D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E511D50-2858-402F-A387-698386065D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E511D50-2858-402F-A387-698386065D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E511D50-2858-402F-A387-698386065D71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
