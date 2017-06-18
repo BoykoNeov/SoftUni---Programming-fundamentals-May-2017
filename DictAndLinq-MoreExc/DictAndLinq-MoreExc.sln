@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortTimes", "SortTimes\SortTimes.csproj", "{64B8507F-4AEC-4CA1-9646-D7239C0C3814}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddFilter", "OddFilter\OddFilter.csproj", "{565FB5A1-394E-4246-BE8C-86BE49B278CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmuneSystem", "ImmuneSystem\ImmuneSystem.csproj", "{DDC44A36-CFD5-41BD-A36A-7A202B2933DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64B8507F-4AEC-4CA1-9646-D7239C0C3814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64B8507F-4AEC-4CA1-9646-D7239C0C3814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64B8507F-4AEC-4CA1-9646-D7239C0C3814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64B8507F-4AEC-4CA1-9646-D7239C0C3814}.Release|Any CPU.Build.0 = Release|Any CPU
+		{565FB5A1-394E-4246-BE8C-86BE49B278CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{565FB5A1-394E-4246-BE8C-86BE49B278CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{565FB5A1-394E-4246-BE8C-86BE49B278CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{565FB5A1-394E-4246-BE8C-86BE49B278CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDC44A36-CFD5-41BD-A36A-7A202B2933DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC44A36-CFD5-41BD-A36A-7A202B2933DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC44A36-CFD5-41BD-A36A-7A202B2933DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC44A36-CFD5-41BD-A36A-7A202B2933DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
