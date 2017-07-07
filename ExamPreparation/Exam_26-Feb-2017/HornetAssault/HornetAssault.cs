@@ -18,19 +18,21 @@ public class HornetAssault
             // hornets kill the hive with no losses
             if (hornetsTotalPower > bees[i])
             {
-                bees[i] = 0;
+                bees[i] = long.MinValue;
                 continue;
             }
             // equal power, hive dies, one hornet dies also
             else if (hornetsTotalPower == bees[i])
             {
-                bees[i] = 0;
+                bees[i] = long.MinValue;
                 hornetsTotalPower -= hornets[currentHornetAlive];
-                hornets[currentHornetAlive] = 0;
+                hornets[currentHornetAlive] = long.MinValue;
 
                 // no more alive hornets
                 if (currentHornetAlive + 1 == hornets.Length)
                 {
+                    // with no more hornets alive, bees win, because as per task definition, there can't be any stalemates
+                    beesAlive = true;
                     break;
                 }
 
@@ -41,7 +43,7 @@ public class HornetAssault
                 beesAlive = true;
                 bees[i] -= hornetsTotalPower;
                 hornetsTotalPower -= hornets[currentHornetAlive];
-                hornets[currentHornetAlive] = 0;
+                hornets[currentHornetAlive] = long.MinValue;
 
                 // no more alive hornets
                 if (currentHornetAlive + 1 == hornets.Length)
@@ -56,12 +58,12 @@ public class HornetAssault
         if (beesAlive)
         {
             // print bees
-            Console.WriteLine(string.Join(" ", bees.Where(x => x > 0)));
+            Console.WriteLine(string.Join(" ", bees.Where(x => x != long.MinValue)));
         }
         else
         {
             // print hornets
-            Console.WriteLine(string.Join(" ", hornets.Where(x => x > 0)));
+            Console.WriteLine(string.Join(" ", hornets.Where(x => x != long.MinValue)));
         }
     }
 }
